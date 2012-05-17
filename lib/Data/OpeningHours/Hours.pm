@@ -27,4 +27,9 @@ sub is_pair_open_between {
     return $pair->[0] le $hour && $pair->[1] gt $hour;
 }
 
+sub first_hour {
+    my ($self) = @_;
+    return $self->{pairs}[0][0];
+}
+
 1;

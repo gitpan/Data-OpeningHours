@@ -4,8 +4,6 @@ package Data::OpeningHours;
 
 use parent 'Exporter';
 
-our $VERSION = '1.0.0';
-
 our @EXPORT_OK = qw/is_open/;
 
 sub is_open {

@@ -9,3 +9,4 @@ lib/Data/OpeningHours/Calendar.pm
 lib/Data/OpeningHours/Hours.pm
 t/calendar.t
 t/hours.t
+t/next-open.t

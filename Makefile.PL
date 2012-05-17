@@ -22,7 +22,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "DateTime" => 0
   },
-  "VERSION" => "0.2.0",
+  "VERSION" => "0.4.0",
   "test" => {
     "TESTS" => "t/*.t"
   }

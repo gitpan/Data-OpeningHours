@@ -56,5 +56,33 @@ sub is_open {
         sprintf('%02d:%02d', $date->hour, $date->minute));
 }
 
+sub first_open_hour {
+    my ($self, $date) = @_;
+    if ($self->is_special_day($date->ymd('-'))) {
+        my $hours = $self->{days}{$date->ymd('-')};
+        return $hours->first_hour() if $hours;
+        return;
+    }
+    my $hours = $self->{week}[$date->wday];
+    return $hours->first_hour() if $hours;
+    return;
+}
+
+sub next_open {
+    my ($self, $date) = @_;
+    my $open = $date->clone;
+    while (1) {
+        $open->add(days => 1);
+        my $hour = $self->first_open_hour($open);
+        if ($hour) {
+            my ($h,$m) = split /:/, $hour;
+            $open->set_hour($h);
+            $open->set_minute($m);
+            return $open;
+        }
+    }
+    return;
+}
+
 1;
 
