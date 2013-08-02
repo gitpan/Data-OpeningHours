@@ -5,6 +5,7 @@ MANIFEST
 META.json
 META.yml
 README
+cpanfile
 dist.ini
 lib/Data/OpeningHours.pm
 lib/Data/OpeningHours/Calendar.pm

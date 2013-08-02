@@ -3,7 +3,7 @@ use warnings;
 package Data::OpeningHours;
 use strict;
 use 5.008_005;
-our $VERSION = '0.4.1';
+our $VERSION = '0.4.2';
 
 use parent 'Exporter';
 
