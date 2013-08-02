@@ -1,6 +1,9 @@
 use strict;
 use warnings;
 package Data::OpeningHours;
+use strict;
+use 5.008_005;
+our $VERSION = '0.4.1';
 
 use parent 'Exporter';
 
@@ -38,6 +41,19 @@ Data::OpeningHours - Is a shop is open or closed at this moment?
 
 Data::OpeningHours helps you create a widget that shows when a shop is open or
 closed.
+
+=head1 AUTHOR
+
+Peter Stuifzand E<lt>peter@stuifzand.euE<gt>
+
+=head1 COPYRIGHT
+
+Copyright 2013 - Peter Stuifzand
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
 
 =cut
 
